@@ -33,23 +33,38 @@ The following libraries are used:
 RESULTS AND DISCUSSION:
 Both MLP and SVM are evaluated using metrics such as: accuracy, precision, recall, F1-score, computational loss, and efficiency (training time).
 
-5.1 MLP Performance Metrics
+MLP Performance Metrics
 1. Test loss (0.203): This represents the average loss of the model on the test dataset. A lower loss value indicates better performance, as it means
 the model is making fewer errors in its predictions.
 2. Test accuracy (0.982): This indicates that the model correctly predicted 98.2% of the instances in the test set. It’s a good overall performance, suggesting the model is well-suited
 for the given task.
 3. Training Time (8545 seconds): This represents the time taken to train the model. It’s important to consider the training time when evaluating the model’s efficiency, especially for
 large datasets or complex models.
-4. Overall Assessment: The MLP-3 model
-achieved a high test accuracy of 98.2% with a relatively low test loss, indicating good performance on the test dataset. The training time of 8545 seconds (approximately 2.37 hours) is
-reasonable, but it might be considered long for some applications. The training time could be reduced by optimizing the model architecture,
-using more efficient hardware, or by using a GPU (graphical processing unit), or exploring techniques like transfer learning.
+4. Overall Assessment: The MLP-3 model achieved a high test accuracy of 98.2% with a relatively low test loss, indicating good performance on the test dataset. The training time of 8545 seconds (approximately 2.37 hours) is reasonable, but it might be considered long for some applications. The training time could be reduced by optimizing the model architecture, using more efficient hardware, or by using a GPU (graphical processing unit), or exploring techniques like transfer learning.
 
 MLP showed superior performance across almost all metrics. With an accuracy of 98.2%, it outperformed SVM, which achieved 97.9% accuracy with the RBF kernel. This result can be
 attributed to MLP’s ability to model complex, non-linear relationships through its multiple hidden layers. However, training time is where SVM shines, taking only 1028 seconds 
 compared to MLP’s 8545 second. Which is about 8 times longer than SVM’s training time, giving us an 8:1 ratio (MLP’s to SVM’s training time). This 
 difference highlights a critical trade-off between predictive performance and computational efficiency. For applications requiring rapid deployment or where computational resources
 are limited, SVM may be preferable.
+
+SVM Performance
+The SVM model exhibited strong performance, while its accuracy was lower than that of MLP, the training time advantage makes it suitable for
+scenarios where quick predictions are essential. SVM’s performance indicates its effectiveness in simpler classification tasks, but its limitations
+become evident with more complex datasets. The results emphasize the importance of model selection based on specific application
+requirements. MLP’s deeper architecture provides robustness in accuracy but demands more computational power, whereas SVM offers
+quick training and inference at the cost of some accuracy.
+
+SVM Performance Metrics
+1. Hinge Loss (0.0526): Hinge loss maximizes the margin between the positive and negative classes while minimizing the number of misclassified samples. A hinge loss between 0.0
+and 0.1 indicates excellent classification performance, where the model correctly classifies most samples with a margin close to 1. A hinge loss of 0.0526 is a relatively low value, indicating that the model is doing well in its classification task.
+2. Accuracy (0.979): An accuracy of 0.95 or higher is considered excellent for MNIST, indicating that the model is performing very well.
+3. Training time (1028.44 seconds): This training time which is approximately 17 minutes is a reasonable time for training an SVM model on
+the MNIST dataset. A training time of 5 to 30 minutes for an RBF kernel is the range for training on the MNIST dataset. Even though this
+time is still very short compared to MLP-3 training time (2.37 hours), the training time obtained for our model can be significantly
+reduced by using a GPU (graphical processing unit).
+
+
 
 Here is a snapshot pictures depicting the performace metrics of the models.
 ![classificiation_report_for_mlp_3__verion_2](https://github.com/user-attachments/assets/4ad9a4e0-3b6d-41ea-b373-8940b249f74e)
