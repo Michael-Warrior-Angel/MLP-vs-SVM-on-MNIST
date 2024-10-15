@@ -1,4 +1,5 @@
-[Comparative Study of Multi-layer Perceptron (MLP) and Support Vector Machine (SVM) on Image Classification using the MNIST Dataset] (https://drive.google.com/file/d/11zkKlXk1_7wEmknVP9LhSeci2adcAbjE/view?usp=sharing)
+# [Comparative Study of Multi-layer Perceptron (MLP) and Support Vector Machine (SVM) on Image Classification using the MNIST Dataset](https://drive.google.com/file/d/11zkKlXk1_7wEmknVP9LhSeci2adcAbjE/view?usp=sharing)
+
 
 
 
@@ -96,4 +97,4 @@ potential for significantly improving accuracy and efficiency, especially in mor
 
 
 
-[Comparative Study of Multi-layer Perceptron (MLP) and Support Vector Machine (SVM) on Image Classification using the MNIST Dataset] (https://drive.google.com/file/d/11zkKlXk1_7wEmknVP9LhSeci2adcAbjE/view?usp=sharing)
+# [Comparative Study of Multi-layer Perceptron (MLP) and Support Vector Machine (SVM) on Image Classification using the MNIST Dataset](https://drive.google.com/file/d/11zkKlXk1_7wEmknVP9LhSeci2adcAbjE/view?usp=sharing)
