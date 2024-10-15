@@ -10,10 +10,10 @@ ARCHITECTURE:
 Multilayer Perceptron (MLP-3)
 The MLP architecture, referred to as MLP-3 due to its three layers, is designed to handle the complexity of image data, particularly its ability to
 learn non-linear relationships betwee features. The structure is as follows:
-a. Input Layer: 784 neurons, corresponding to the 28x28 pixel values from the MNIST images.
-b. Hidden Layer 1: 512 neurons with ReLU activation function.
-c. Hidden Layer 2: 256 neurons with ReLU activation function.
-d. Output Layer: 10 neurons with softmax activation for multi-class classification:
+1. Input Layer: 784 neurons, corresponding to the 28x28 pixel values from the MNIST images.
+2. Hidden Layer 1: 512 neurons with ReLU activation function.
+3. Hidden Layer 2: 256 neurons with ReLU activation function.
+4. Output Layer: 10 neurons with softmax activation for multi-class classification:
 
 Support Vector Machine (SVM)
 SVM operates differently, relying on the concept of hyperplanes to separate data points in a high-dimensional space. The kernel for SVM is 
