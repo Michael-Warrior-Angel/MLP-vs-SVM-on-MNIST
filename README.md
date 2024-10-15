@@ -91,3 +91,6 @@ potential for significantly improving accuracy and efficiency, especially in mor
 
 
 
+
+link to the article:
+https://drive.google.com/file/d/11zkKlXk1_7wEmknVP9LhSeci2adcAbjE/view?usp=sharing
