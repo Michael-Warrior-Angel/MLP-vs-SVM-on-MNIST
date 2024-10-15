@@ -1,3 +1,6 @@
+link to the article:
+https://drive.google.com/file/d/11zkKlXk1_7wEmknVP9LhSeci2adcAbjE/view?usp=sharing
+
 INTRODUCTION:
 This project presents a comparative study of Multilayer Perceptron (MLP) and Support Vector Machine (SVM) for image classification using the MNIST dataset.
 Both models are implemented using Python, with Keras for MLP and Scikit-learn for SVM. The models are evaluated based on performance metrics such as
