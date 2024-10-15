@@ -23,11 +23,12 @@ RBF which is ideal for image classification tasks.
 RBF Kernel: A non-linear kernel that uses a Gaussian function to project the data into a higher-dimensional space
 
 Tools and Libraries:
-We use Python as the main programming language for implementing the models. The following libraries are used:
-Keras: To build and train the MLP.
-Scikit-learn: For implementing SVM and calculating various performance metrics.
-NumPy: For data manipulation and handling arrays.
-Matplotlib: For visualizing results.
+Python is used as the main programming language for implementing the models. 
+The following libraries are used:
+1. Keras: To build and train the MLP.
+2. Scikit-learn: For implementing SVM and calculating various performance metrics.
+3. NumPy: For data manipulation and handling arrays.
+4. Matplotlib: For visualizing results.
 
 RESULTS AND DISCUSSION:
 Both MLP and SVM are evaluated using metrics such as: accuracy, precision, recall, F1-score, computational loss, and efficiency (training time).
