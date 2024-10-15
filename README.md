@@ -79,7 +79,7 @@ Here is a snapshot pictures depicting the performace metrics of the models.
 ![prediction_1](https://github.com/user-attachments/assets/2bfadaf5-09c5-4b55-bbd0-c6f132f07712)
 
 
-CONCLUSION
+CONCLUSION:
 In conclusion, this study highlights the strengths and weaknesses of MLP and SVM for image classification tasks using the MNIST dataset. The
 analysis conducted in this research demonstrates that MLP consistently outperformed SVM in accuracy and other classification
 metrics, showcasing its capability for complex pattern recognition. However, SVM remains a viable option for tasks requiring rapid processing,
