@@ -114,44 +114,21 @@ plt.show()
 # In[7]:
 
 
-# Assuming the number of classes
+# Initialize variables to store the results for each class
 num_classes = conf_matrix.shape[0]
+true_positives = np.diag(conf_matrix)
+false_positives = conf_matrix.sum(axis=0) - true_positives
+false_negatives = conf_matrix.sum(axis=1) - true_positives
+true_negatives = conf_matrix.sum() - (false_positives + false_negatives + true_positives)
 
-# Initialize variables to store the results
-true_positives = np.zeros(num_classes)
-false_positives = np.zeros(num_classes)
-false_negatives = np.zeros(num_classes)
-true_negatives = np.zeros(num_classes)
-
-# Iterate over the classes
+# Print metrics for each class
 for i in range(num_classes):
-    # calculate true positives, false positives, and false negatives for each class
-    true_positives[i] = conf_matrix[i, i]
-    false_positives[i] = sum(conf_matrix[:, i]) - true_positives[i]
-    false_negatives[i] = sum(conf_matrix[i, :]) - true_positives[i]
-    
-# calculate true negatives for each class
-true_negatives[i] = sum(sum(conf_matrix)) - sum(conf_matrix[:, i]) - sum(conf_matrix[i, :]) + conf_matrix[i,i]               
-# true_negatives[i] = sum(sum(conf_matrix)) - false_positives[i] - false_negatives[i] + 3*true_positives[i]
-
-
-# Print the results for each class
-for i in range(num_classes):
-    print(f"class {i}:")
-    print(f"Count of number {i}: {class_counts[i]}")  
+    print(f"Class {i}:")
     print(f"True positives: {true_positives[i]}")
-    print(f"False negatives: {false_negatives[i]}")
     print(f"False positives: {false_positives[i]}")
-    # print(f"True negatives: {true_negatives[i]}")
+    print(f"False negatives: {false_negatives[i]}")
+    print(f"True negatives: {true_negatives[i]}")
     print("=========================\n")
-    
-print(f"Total Predictions: {sum(sum(conf_matrix))}")
-
-# # calculate the count of members within each class
-# class_counts = np.sum(conf_matrix, axis=1)
-# print("class counts:")
-# for i in range(num_classes):
-#     print(f"class {i}: {class_counts[i]}")
 
 
 # In[8]:
